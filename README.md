@@ -4,11 +4,6 @@
 
 MICCAI 2026 Off-Grid Workshop — Oral
 
-Release candidate: SINR author permission is pending. Public release of this
-candidate and distribution of its Docker image are on hold; see
-[third-party notes](THIRD_PARTY.md). Technical verification does not resolve
-this permission status.
-
 [Paper](https://arxiv.org/abs/2608.16146) · [OpenReview](https://openreview.net/forum?id=BNNJcVHtpH) · [Poster](poster/offgrid_poster_v3.pdf) · [Running instructions](docs/running.md)
 
 ![Figure 1: deformation representations and study overview](figures/fig1.png)
@@ -116,3 +111,8 @@ Our code is [MIT licensed](LICENSE). Third-party code, weights, datasets and
 container components retain their own terms; see [third-party notes](THIRD_PARTY.md).
 Please also cite the original methods you use. This is research software, not
 a clinically validated system.
+
+Release candidate: SINR author permission is pending. Public release of this
+candidate and distribution of its Docker image are on hold; see
+[third-party notes](THIRD_PARTY.md). Technical verification does not resolve
+this permission status.
