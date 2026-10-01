@@ -4,7 +4,7 @@
 
 MICCAI 2026 Off-Grid Workshop — Oral
 
-[Paper](https://arxiv.org/abs/2608.16146) · [OpenReview](https://openreview.net/forum?id=BNNJcVHtpH) · [Poster](poster/offgrid_poster_v3.pdf) · [Running instructions](docs/running.md)
+[Paper](https://papers.miccai.org/miccai-2026-sat/paper/Off_Grid_030.pdf) · [OpenReview](https://openreview.net/forum?id=BNNJcVHtpH) · [Poster](poster/offgrid_poster_v3.pdf) · [Running instructions](docs/running.md)
 
 ![Figure 1: deformation representations and study overview](figures/fig1.png)
 
