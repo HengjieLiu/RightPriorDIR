@@ -1,0 +1,17 @@
+{
+  "schema_version": 1, "id": "oasis-timing", "kind": "timing", "dataset": "oasis",
+  "role": "September 16 N=10 base/fast timing protocol",
+  "cases": [0, 9], "sd_ddof": 1,
+  "reference": "results/updated_oasis/timing_first10.csv",
+  "backend": {"cudnn_benchmark": false, "cudnn_deterministic": true},
+  "paired_schedules": true,
+  "cold_rank": 0, "cold_per_candidate": 1,
+  "endpoint": "device-loaded images to serialized dense displacement; excludes setup/loading/evaluation",
+  "arms": [
+    {"id": "mrdbscp", "config": "configs/oasis/mrdbscp.json", "weights": [1000]},
+    {"id": "dbscp-cps2", "config": "configs/oasis/dbscp_cps2.json", "weights": [1000]},
+    {"id": "dbscp-cps4", "config": "configs/oasis/dbscp_cps4.json", "weights": [1000]},
+    {"id": "sinr-cps2", "config": "configs/oasis/sinr_cps2.json", "weights": [1000]},
+    {"id": "sinr-cps4", "config": "configs/oasis/sinr_cps4.json", "weights": [1000]}
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "schema_version": 1, "dataset": "4dct", "crop_mode": "corrected",
+  "method": "direct_cp_32_16_8_4_ptv_lcc_isotv",
+  "backend": {"cudnn_benchmark": true, "cudnn_deterministic": false},
+  "parameters": {"lr": 0.001, "epochs": 2500, "ptv_isotv_weight": 0.055,
+    "stage_full_cps": "32,16,8,4", "stage_downsample": "8,4,2,1", "stage_epochs": "400,400,800,900", "stage_lr": "0.001"}
+}

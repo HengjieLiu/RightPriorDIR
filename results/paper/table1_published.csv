@@ -1,0 +1,6 @@
+method,dice_base,dice_fast,steps_base,steps_fast,cold_base_sec,cold_fast_sec,warm_base_sec,warm_fast_sec,peak_gib
+MR-D-BSCP (8-4-2),0.810,0.809,2500,440,152.0,101.1,62.4,11.0,3.93
+D-BSCP (cps2),0.805,0.805,2500,431,135.4,76.9,80.9,14.4,2.16
+D-BSCP (cps4),0.799,0.797,2500,477,126.3,78.6,80.9,15.3,1.83
+INR-BSCP (cps2),0.799,0.793,2500,799,370.9,171.4,277.9,90.2,7.72
+INR-BSCP (cps4),0.796,0.786,2500,644,175.0,90.4,107.8,29.2,2.58

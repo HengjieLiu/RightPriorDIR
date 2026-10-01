@@ -1,0 +1,4 @@
+# The release manifest hashes exact bytes. Disable automatic newline conversion.
+* -text
+# Frozen CSVs intentionally retain the original CRLF record separators.
+*.csv whitespace=trailing-space,space-before-tab,cr-at-eol

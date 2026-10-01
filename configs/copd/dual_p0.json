@@ -1,0 +1,6 @@
+{
+  "schema_version": 1, "dataset": "copd", "crop_mode": "legacy", "role": "post-paper extension",
+  "method": "dual_inr", "dual_variant": "P0", "regularization_multiplier": 1.0,
+  "backend": {"cudnn_benchmark": false, "cudnn_deterministic": true},
+  "parameters": {"seed": 42}
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1, "id": "copd-extension", "kind": "quality", "dataset": "copd",
+  "role": "post-paper extension", "cases": [1, 10], "sd_ddof": 1,
+  "reference": "results/copd_extension/population.csv", "crop_mode": "legacy",
+  "excluded": ["pTVReg external reference with corrected MATLAB crop"],
+  "arms": [
+    {"id": "dual-p0", "config": "configs/copd/dual_p0.json", "weights": [1]},
+    {"id": "dual-p1", "config": "configs/copd/dual_p1.json", "weights": [1]},
+    {"id": "mrdbscp-p2e", "config": "configs/copd/mrdbscp_p2e.json", "weights": [0.11]}
+  ]
+}

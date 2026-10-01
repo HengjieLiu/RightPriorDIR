@@ -1,0 +1,5 @@
+{
+  "schema_version": 1, "dataset": "4dct", "crop_mode": "corrected", "method": "idir_be_default_lungmask",
+  "backend": {"cudnn_benchmark": true, "cudnn_deterministic": false},
+  "parameters": {"alpha_bending": 3.0, "lr": 0.0001, "epochs": 2500}
+}

@@ -1,0 +1,23 @@
+# Overlay on the immutable historical Python 3.10 / torch 2.6.0+cu118 image.
+# Do not install upstream requirements wholesale: the wrappers use a subset.
+numpy==2.2.3
+scipy==1.15.2
+matplotlib==3.10.0
+nibabel==5.3.2
+pandas==2.2.3
+SimpleITK==2.4.1
+surface-distance==0.1
+monai==1.5.2
+lungmask==0.2.20
+PyYAML==6.0.2
+pytest==8.3.5
+tqdm==4.67.1
+# Transitive packages added by this overlay (the base digest freezes the rest).
+fastremap==1.20.0
+fill-voids==2.1.2
+iniconfig==2.3.0
+more-itertools==11.1.0
+pluggy==1.6.0
+pydicom==3.0.2
+pytz==2026.4
+tzdata==2026.4

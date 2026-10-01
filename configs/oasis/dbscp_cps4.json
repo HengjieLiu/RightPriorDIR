@@ -1,0 +1,5 @@
+{
+  "schema_version": 1, "dataset": "oasis", "method": "direct_cp_cps4_be_bspline_analytic",
+  "backend": {"cudnn_benchmark": true, "cudnn_deterministic": false},
+  "parameters": {"alpha": 1000.0, "lr": 0.001, "epochs": 2500}
+}

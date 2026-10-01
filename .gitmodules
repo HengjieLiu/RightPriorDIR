@@ -1,0 +1,9 @@
+[submodule "third_party/IDIR"]
+	path = third_party/IDIR
+	url = https://github.com/MIAGroupUT/IDIR
+[submodule "third_party/SINR"]
+	path = third_party/SINR
+	url = https://github.com/vasl12/SINR
+[submodule "third_party/DUAL-INR-DIR"]
+	path = third_party/DUAL-INR-DIR
+	url = https://github.com/IPMI-ICNS-UKE/DUAL-INR-DIR

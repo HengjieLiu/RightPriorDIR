@@ -1,0 +1,7 @@
+{
+  "schema_version": 1, "dataset": "4dct", "crop_mode": "corrected",
+  "method": "dual_inr", "dual_variant": "PL1A", "regularization_multiplier": 1.0,
+  "schedule_note": "Figure 2 author-blur exception: actual total_steps=3000, not 2500",
+  "backend": {"cudnn_benchmark": false, "cudnn_deterministic": true},
+  "parameters": {"seed": 42}
+}

@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "purpose": "source provenance, not a runtime dependency",
+  "files": [
+    {
+      "path": "rightpriordir/oasis_engine.py",
+      "source": "scripts/experiments/oasis_alpha_sweep/run_one.py",
+      "source_sha256": "f23bb046a7ceac20985b09b124239a8cafaeef4fa97576ca5f6ac711423dbc87",
+      "extracted_sha256": "5a2303e494c8d645d1896e773feb7ea9f94b37b908aeb669211efcdff1f1470f",
+      "transform": "portable imports; frozen defaults; deferred instrumentation disabled",
+      "curated_sha256": "40d779e9687e32a0409d114d10c17f482fbfde310ef858fbdfbb64d6b31089b7"
+    },
+    {
+      "path": "rightpriordir/oasis.py",
+      "source": "scripts/experiments/oasis_alpha_sweep/common.py",
+      "source_sha256": "43bb7cc4e63f7991b6b277e5ae1d6945d408d1dd99c56971a70477cc4714d277",
+      "extracted_sha256": "875f859d6eee193232ba086f9a0c2de73688a4f2210cf73750acbe725df8c9a0",
+      "transform": "dependency-closed definitions",
+      "curated_sha256": "a1501c647282be5f53c1f4cc9b6b1370835605e32d67b3a1ba3ccdfd56a06771"
+    },
+    {
+      "path": "rightpriordir/lung_engine.py",
+      "source": "scripts/experiments/lungct_no_sweep_repro/run_one.py",
+      "source_sha256": "f1add3e98ca66ce553e65e15f86dc94756a38c120dacd66b86608a661a14d142",
+      "extracted_sha256": "3a1d2f6e18f92de435465129fd92599781930bada4e038964823758318ab9d44",
+      "transform": "portable imports; frozen defaults; deferred instrumentation disabled",
+      "curated_sha256": "feb92dc17ce68fd38a5c761e7855df468a45c28ba51acd6d8286353cd6ef5ff3"
+    },
+    {
+      "path": "rightpriordir/lung.py",
+      "source": "scripts/experiments/lungct_no_sweep_repro/common.py",
+      "source_sha256": "b24855826bb826dd98ba8a8f1f530fba3636055948a3091766e58844496a999b",
+      "extracted_sha256": "f6baff90fb924f68fd69f78c3f74bda27819a034ede17fbb8fc840853e2d01ce",
+      "transform": "dependency-closed definitions",
+      "curated_sha256": "d009504a4163b7445d307452c9ca72dc3dd80f3c246c3fb7dbaae2926ec4ffff"
+    },
+    {
+      "path": "rightpriordir/raw_lung.py",
+      "source": "scripts/data/common/lungct.py",
+      "source_sha256": "282b43bb76b53790aa448d24c14faca729b155a28fbc1a2cbcbb58532ebc9e23",
+      "extracted_sha256": "66e974626b09021eb8123058b4aaea6e930c5f6728b6a3fc726f7fe19b7cd33c",
+      "transform": "dependency-closed definitions",
+      "curated_sha256": "773dc0e37ea67e288a826934aeb760820212e17459e7e26c3f854eb3dcf5a7c3"
+    },
+    {
+      "path": "rightpriordir/geometry.py",
+      "source": "scripts/data/preprocessing/lungct/generate_4dct_ptvprep.py",
+      "source_sha256": "3e29dccf8a5dfe4f415b5be5a7df86521f5daed05531f740d3ed1eb2306293eb",
+      "extracted_sha256": "e1f70d3637140cdabafceafff2a67c34bf1d0003a09e0773b54e12f006ce0e89",
+      "transform": "dependency-closed definitions",
+      "curated_sha256": "eef98a70243036e9797c9d807813a07b0ab25ed664e2afe220cacfaeebc438c4"
+    },
+    {
+      "path": "rightpriordir/dual_helpers.py",
+      "source": "scripts/experiments/lungct_dual_inr_author/adapter.py",
+      "source_sha256": "1caa24d79ed69e24f1d9050f1e4860c065267b43d30597ee586ee6b2b40d8940",
+      "extracted_sha256": "8337b4eea392d59179d0d3b10f8720fb832a2393e82a85561c8b25478232461d",
+      "transform": "dependency-closed definitions",
+      "curated_sha256": "57f051e2743e26acf0338bc301f02fad53f69ea68871536413b6c378da747519"
+    },
+    {
+      "path": "rightpriordir/dual_adapter.py",
+      "source": "scripts/experiments/lungct_dual_inr_controlled/adapter.py",
+      "source_sha256": "dc7768ca5698e439e53358133f86f150598200e8a1c294a9b75fc5ef3a45bc05",
+      "extracted_sha256": "97488a0784ca377317e03ccc2ca0e0a20f49e249edef0dbf1d40859e39c44158",
+      "transform": "dependency-closed definitions",
+      "curated_sha256": "c959e29275790ddbe925975bd809d9005284294eb67d3ebf7ad7e2a75120deb2"
+    },
+    {
+      "path": "rightpriordir/dual_data.py",
+      "source": "scripts/experiments/lungct_dual_inr_controlled/data.py",
+      "source_sha256": "a4939112aadb66cf6643d98a7013523a37968ee22bcbbcc6cba74e965914c14b",
+      "extracted_sha256": "7f6eb0537ed0dbd5f6ca196c6c9994b9b41e8b4032142ed6f1dd18ae8084fde0",
+      "transform": "dependency-closed definitions",
+      "curated_sha256": "e47ee10f6269711dcf50d159ac6f5870cc79f7665d0c1d43c200d869083e1916"
+    },
+    {
+      "path": "rightpriordir/dual_copd_data.py",
+      "source": "scripts/experiments/lungct_dual_inr_controlled_copd/data.py",
+      "source_sha256": "523d90a671e0aa911ee79712bed64441e4b27309039d590f9dcb8d933bdd1513",
+      "extracted_sha256": "c85435de0fadfa186dc95902b830520b660d243ca4bf20554a7f73861bc63c16",
+      "transform": "dependency-closed definitions",
+      "curated_sha256": "86a45a8d5effa3fb64ec778a6f905b7d10e82a2eb5fce9e09dcb3ad18631fa53"
+    },
+    {
+      "path": "rightpriordir/_plot_oasis.py",
+      "source": "scripts/experiments/oasis_alpha_sweep/plot_first10_first20_alpha5_saved_baselines.py",
+      "source_sha256": "b14b3e146e49d49f4e2281c061e52040d7e7fcc541bd1ca411b254cabc29dced",
+      "extracted_sha256": "dae69e3d1170fc34b7f6d15637c80290faf34e1e75ae5f3dabf595ac6ba497e5",
+      "transform": "dependency-closed definitions",
+      "curated_sha256": "71ec031ce5b2de42a141eeef7253835db0b839056321d1efed91ed19a7d0dc4f"
+    },
+    {
+      "path": "rightpriordir/_plot_style.py",
+      "source": "experiments/paper_artifacts/build_standardized_pareto.py",
+      "source_sha256": "c3566eeea5fed7d82f20aa2402b963bf5a21526aa55b561f45c1bc3cf2c403ac",
+      "extracted_sha256": "98be808151592b7283d7d4fede7593ad7ff5259f7c8d77a36dad28f97704b0b3",
+      "transform": "dependency-closed definitions",
+      "curated_sha256": "380b5231d6e93a3accea0770c0059847222b582f43f4270f66191cc1b3e46ff1"
+    },
+    {
+      "path": "rightpriordir/_plot_lung.py",
+      "source": "experiments/paper_artifacts/pareto_figure/build_final_dirlab4dct_axes_labels.py",
+      "source_sha256": "5251d3dd3071e2aa259e59e34454b240bd80dca6c35b091e2c6d8002b29c1d03",
+      "extracted_sha256": "caec7f67f84acbc3cef7e7b4f547c2064c3114a666adb4ea52636883b430e379",
+      "transform": "dependency-closed definitions",
+      "curated_sha256": "c4f3de88553f8aee9f14c7fdb0057effb9af5d33f2c9138568fa2e4efd714af4"
+    }
+  ],
+  "post_extraction_changes": [
+    "explicit_public_crop_naming",
+    "strict_OASIS_input_validation",
+    "unused_import_cleanup",
+    "formatting_only"
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "schema_version": 1, "dataset": "oasis", "method": "idir_original",
+  "backend": {"cudnn_benchmark": true, "cudnn_deterministic": false},
+  "parameters": {"alpha": 1.0, "lr": 0.0001, "epochs": 2500}
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1, "id": "4dct-paper", "kind": "quality", "dataset": "4dct",
+  "role": "Figure 2 released-method curves", "cases": [1, 10], "sd_ddof": 0,
+  "reference": "results/paper/dirlab4dct_arc.csv", "crop_mode": "corrected",
+  "excluded": ["pTVReg external reference", "2400-step legacy context w=0.022"],
+  "arms": [
+    {"id": "idir", "config": "configs/4dct/idir.json", "weights": [0.1, 1, 3, 10, 30, 100, 1000]},
+    {"id": "sinr-cps4", "config": "configs/4dct/sinr_cps4.json", "weights": [10000, 20000, 50000, 100000, 200000, 500000, 1000000]},
+    {"id": "dbscp-cps4", "config": "configs/4dct/dbscp_cps4.json", "weights": [10000, 20000, 50000, 100000, 200000, 500000, 1000000]},
+    {"id": "mrdbscp-ncc", "config": "configs/4dct/mrdbscp_ncc.json", "weights": [1000, 3000, 10000, 30000, 100000]},
+    {"id": "mrdbscp-ptv", "config": "configs/4dct/mrdbscp_ptv.json", "weights": [0.011, 0.033, 0.055, 0.11, 0.33]},
+    {"id": "dual-pl1a", "config": "configs/4dct/dual_pl1a.json", "weights": [0.01, 0.1, 0.3333333333333333, 1, 3, 10], "sd_ddof": 1, "step_note": "3000-step author-blur exception; source aggregate uses sample SD"}
+  ]
+}

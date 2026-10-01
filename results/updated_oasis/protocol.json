@@ -1,0 +1,19 @@
+{
+  "source_id": "2026-09-16_oasis_table1_base_fast_ft_first10_gpu3",
+  "alpha": 1000.0, "seed": 1,
+  "cohort": "splits/oasis10.csv", "cold_observations": 1, "warm_observations": 10,
+  "backend": {"cudnn_benchmark": false, "cudnn_deterministic": true},
+  "endpoint": "loaded device images to serialized dense DVF; excludes evaluation and setup",
+  "base": {"single_stage_epochs": 2500, "dbscp_lr": 0.001, "sinr_lr": 0.0001,
+    "mr_stage_epochs": [400,800,1300], "mr_stage_lr": [0.001,0.001,0.001]},
+  "fast": {
+    "single_stage": {"max_epochs": 2500, "lr_multiplier": 10, "minimum_epochs": 375, "patience": 150, "check_interval": 1, "min_delta": 0.0001},
+    "mr": {"max_stage_epochs": [400,800,1300], "stage_lr": [0.03,0.01,0.003],
+      "minimum_stage_epochs": [40,80,130], "patience": [20,35,50], "check_interval": [25,25,25],
+      "relative_delta_total": [0.0001,0.0001,0.0001], "relative_delta_data": [0.00005,0.00005,0.00005]}
+  },
+  "historical_accuracy_is_separate": true,
+  "timing_sweep_runner_released": true,
+  "runner_suite": "experiments/oasis-timing.json",
+  "note": "Frozen measurements stay unchanged. The separate experiment runner supplies a persistent cold/warm harness; it was not executed during release preparation."
+}

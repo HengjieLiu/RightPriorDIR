@@ -1,0 +1,6 @@
+{
+  "schema_version": 1, "dataset": "4dct", "crop_mode": "corrected",
+  "method": "sinr_cps4_global_ncc_fd_be",
+  "backend": {"cudnn_benchmark": true, "cudnn_deterministic": false},
+  "parameters": {"alpha": 10000.0, "lr": 0.0001, "epochs": 2500, "cps": 4}
+}

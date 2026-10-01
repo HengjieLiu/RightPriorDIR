@@ -1,0 +1,7 @@
+{
+  "schema_version": 1, "dataset": "oasis",
+  "method": "direct_cp_8_4_2_be_bspline_analytic_multistage",
+  "backend": {"cudnn_benchmark": true, "cudnn_deterministic": false},
+  "parameters": {"alpha": 1000.0, "lr": 0.001, "epochs": 2500,
+    "stage_full_cps": "8,4,2", "stage_downsample": "4,2,1", "stage_epochs": "400,800,1300", "stage_lr": "0.001,0.001,0.001"}
+}

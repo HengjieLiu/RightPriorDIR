@@ -1,0 +1,17 @@
+**/.git
+**/__pycache__
+**/.pytest_cache
+**/.ruff_cache
+**/.env*
+**/.ipynb_checkpoints
+.venv
+.private
+data
+prepared
+outputs
+runs
+checkpoints
+*.pt
+*.pth
+*.ckpt
+# Keep pinned upstream configuration folders such as SINR/conf/data.

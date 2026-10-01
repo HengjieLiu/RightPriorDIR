@@ -1,0 +1,15 @@
+{
+  "schema_version": 1, "id": "oasis-accuracy", "kind": "quality", "dataset": "oasis",
+  "role": "historical OASIS100 base/fast accuracy, separate from September 16 timing",
+  "cases": [0, 99], "sd_ddof": 1,
+  "reference": "results/paper/oasis100_accuracy.csv",
+  "backend": {"cudnn_benchmark": true, "cudnn_deterministic": false},
+  "paired_schedules": true,
+  "arms": [
+    {"id": "mrdbscp", "config": "configs/oasis/mrdbscp.json", "weights": [1000]},
+    {"id": "dbscp-cps2", "config": "configs/oasis/dbscp_cps2.json", "weights": [1000]},
+    {"id": "dbscp-cps4", "config": "configs/oasis/dbscp_cps4.json", "weights": [1000]},
+    {"id": "sinr-cps2", "config": "configs/oasis/sinr_cps2.json", "weights": [1000]},
+    {"id": "sinr-cps4", "config": "configs/oasis/sinr_cps4.json", "weights": [1000]}
+  ]
+}

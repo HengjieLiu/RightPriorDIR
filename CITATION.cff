@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "Please cite the paper and the relevant original baseline methods."
+type: software
+title: "RightPriorDIR: The Right Prior for the Right Deformation"
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/HengjieLiu/RightPriorDIR"
+authors:
+  - family-names: Liu
+    given-names: Hengjie
+  - family-names: Shen
+    given-names: Chushu
+  - family-names: Ruan
+    given-names: Dan
+  - family-names: Sheng
+    given-names: Ke
+preferred-citation:
+  type: article
+  title: "The Right Prior for the Right Deformation: Rethinking Continuous Deformable Image Registration"
+  authors:
+    - family-names: Liu
+      given-names: Hengjie
+    - family-names: Shen
+      given-names: Chushu
+    - family-names: Ruan
+      given-names: Dan
+    - family-names: Sheng
+      given-names: Ke
+  year: 2026
+  doi: "10.48550/arXiv.2608.16146"
+  url: "https://arxiv.org/abs/2608.16146"
