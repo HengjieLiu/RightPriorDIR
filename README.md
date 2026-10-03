@@ -2,9 +2,46 @@
 
 **The Right Prior for the Right Deformation: Rethinking Continuous Deformable Image Registration**
 
-MICCAI 2026 Off-Grid Workshop — Oral
+[MICCAI 2026 Off-Grid Workshop](https://off-grid-workshop.github.io/) — Oral
 
 [Paper](https://papers.miccai.org/miccai-2026-sat/paper/Off_Grid_030.pdf) · [OpenReview](https://openreview.net/forum?id=BNNJcVHtpH) · [Poster](poster/offgrid_poster_v3.pdf) · [Running instructions](docs/running.md)
+
+## TL;DR
+
+- **Choose a model that matches the deformation properties—not simply one that uses a neural network. Matching the model prior and optimization path to the deformation properties is key to registration accuracy.**
+  - Inter-subject brain registration involves smaller, more locally varying deformations, whereas intra-subject lung registration involves larger, smoother, more coherent motion. Our controlled comparison shows that models behave differently across these tasks.
+
+- **Classical multiresolution B-spline remains a strong baseline** and can also be fast (~ 5 s, with a modern GPU-accelerated PyTorch implementation).
+
+- **For fair comparison, evaluate registration methods across the alignment–regularity trade-off** rather than relying on a single operating point whenever possible.
+
+## Updates
+
+🎉 Our paper won the **Best Paper Award** at the MICCAI 2026 Off-Grid Workshop.
+
+🎉 A slightly adapted version of MR-D-BSCP **placed 2nd in the Learn2Breath task at Learn2Reg 2026** ([challenge page](https://www.codabench.org/competitions/15955/)). Code for the challenge solution will be released by the end of October 2026.
+
+
+## Acknowledgement
+
+Our alignment–regularity evaluation is inspired by the ARC paper,
+[Evaluation of Deformable Image Registration under Alignment-Regularity Trade-off](https://arxiv.org/abs/2503.07185).
+
+> [!IMPORTANT]
+> We really like this paper and believe that comparing registration methods in this way is necessary and useful for a **fair** evaluation. If you do not have the resources to generate the entire curve, evaluating a smaller range or on a sub-cohort or at least controlling the regularization strength for single operating point is still a good thing to do.
+
+We thank the authors of the following repositories for making their code
+publicly available and supporting our baseline implementations:
+
+- [IDIR](https://github.com/MIAGroupUT/IDIR)
+- [SINR](https://github.com/vasl12/SINR)
+- [Dual-INR](https://github.com/IPMI-ICNS-UKE/DUAL-INR-DIR)
+
+See [third-party notes](THIRD_PARTY.md) for pinned versions, wrapper adaptations
+and applicable terms.
+
+
+## Overview
 
 ![Figure 1: deformation representations and study overview](figures/fig1.png)
 
@@ -15,7 +52,8 @@ numerical inputs for paper figures and tables.
 
 ![Figure 2: accuracy–regularity curves on OASIS and DIR-LAB 4DCT](figures/fig2.png)
 
-## Layer 1 — Reproduce the figures and tables
+## Experiments
+### Layer 1 — Reproduce the figures and tables
 
 No scans, GPU, registration optimization, or internet at rendering time are
 required. Docker build needs network access on first use.
@@ -35,7 +73,7 @@ OASIS100 accuracy, original Table 1, COPD extension tables and input checksums.
 The regenerated Figure 2 PNG matched the paper asset byte-for-byte in release
 acceptance. Figure 1 and the poster are static supplied assets.
 
-## Layer 2 — Rerun the experiments
+### Layer 2 — Rerun the experiments
 
 Full cohort/sweep runners are provided for **OASIS, DIR-LAB 4DCT and COPD**,
 including per-case evaluation, verified resume, preserved failed attempts and
@@ -81,20 +119,6 @@ and [detailed commands](docs/running.md). Registration is explicitly opt-in via
 `--execute`; preparing this release did not rerun paper optimization. See
 [frozen-result provenance](docs/results.md) and [acceptance limits](docs/validation.md).
 
-## Acknowledgement
-
-Our alignment–regularity evaluation is inspired by the ARC paper,
-[Evaluation of Deformable Image Registration under Alignment-Regularity Trade-off](https://arxiv.org/abs/2503.07185).
-
-We thank the authors of the following repositories for making their code
-publicly available and supporting our baseline implementations:
-
-- [IDIR](https://github.com/MIAGroupUT/IDIR)
-- [SINR](https://github.com/vasl12/SINR)
-- [Dual-INR](https://github.com/IPMI-ICNS-UKE/DUAL-INR-DIR)
-
-See [third-party notes](THIRD_PARTY.md) for pinned versions, wrapper adaptations
-and applicable terms.
 
 ## Citation and license
 
@@ -111,8 +135,3 @@ Our code is [MIT licensed](LICENSE). Third-party code, weights, datasets and
 container components retain their own terms; see [third-party notes](THIRD_PARTY.md).
 Please also cite the original methods you use. This is research software, not
 a clinically validated system.
-
-Release candidate: SINR author permission is pending. Public release of this
-candidate and distribution of its Docker image are on hold; see
-[third-party notes](THIRD_PARTY.md). Technical verification does not resolve
-this permission status.
