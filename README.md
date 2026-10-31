@@ -19,7 +19,7 @@
 
 🎉 Our paper won the **Best Paper Award** at the MICCAI 2026 Off-Grid Workshop.
 
-🎉 A slightly adapted version of MR-D-BSCP **placed 2nd in the Learn2Breath task at Learn2Reg 2026** ([challenge page](https://www.codabench.org/competitions/15955/)). Code for the challenge solution will be released by the end of October 2026.
+🎉 A slightly adapted version of MR-D-BSCP **placed 2nd in the Learn2Breath task at Learn2Reg 2026** ([challenge page](https://www.codabench.org/competitions/15955/)). Code for the challenge solution will be released by the end of November 2026.
 
 ## Pending Plans
 - [ ] Upload Learn2Breath challenge solution
