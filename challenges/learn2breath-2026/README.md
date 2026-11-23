@@ -1,6 +1,6 @@
 # Learn2Breath 2026 · MR-D-BSCP
 
-Our MR-D-BSCP submission placed second in the Learn2Breath task at Learn2Reg 2026. It fits each inspiratory/expiratory CT pair independently on one GPU, using only the two scans. [Challenge page](https://www.codabench.org/competitions/15955/) · [Run one pair](#run-one-pair)
+Our MR-D-BSCP submission placed second in the Learn2Breath task at Learn2Reg 2026. It fits each inspiratory/expiratory CT pair independently on one GPU, using only the two scans. [Challenge page](https://www.codabench.org/competitions/15955/) · [Test-phase report](https://github.com/MFaizyabAli/Learn2Reg26_L2B/tree/main/Learn2Breath_TestPhase_Results) · [Run one pair](#run-one-pair)
 
 ## 1. MR-D-BSCP framework and registration objective
 
