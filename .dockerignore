@@ -11,6 +11,8 @@ prepared
 outputs
 runs
 checkpoints
+# The Learn2Breath release has its own Docker build context and local outputs.
+challenges/learn2breath-2026
 *.pt
 *.pth
 *.ckpt
